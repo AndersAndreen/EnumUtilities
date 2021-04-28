@@ -21,7 +21,7 @@ namespace EnumUtilities
             return Enum.GetNames(enumInput.GetType()).ToList();
         }
 
-        public static bool IsEnum<T>(this string input, T defaultValue) where T : Enum
+        public static bool IsEnum<T>(this string input) where T : Enum
         {
             return Enum.TryParse(typeof(T), input, true, out var output);
         }

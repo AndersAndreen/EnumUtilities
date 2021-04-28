@@ -27,9 +27,9 @@ namespace EnumUtilities
             var fruits4 = new Fruits().ToListOfStrings().PrintList("ToListOfStrings");
 
             // Check if a string has a corresponding Enum:
-            var bool1 = "apple".IsEnum(Fruits.None).Print(@"""apple""");
-            var bool2 = "banana".IsEnum(Fruits.None).Print(@"""banana""");
-            var bool3 = "orange".IsEnum(Fruits.None).Print(@"""orange""");
+            var bool1 = "apple".IsEnum<Fruits>().Print(@"""apple""");
+            var bool2 = "banana".IsEnum<Fruits>().Print(@"""banana""");
+            var bool3 = "orange".IsEnum<Fruits>().Print(@"""orange""");
             Console.WriteLine();
 
             // Convert a string to an Enum specifying a default value if no match is found:
