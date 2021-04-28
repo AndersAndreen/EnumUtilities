@@ -1,2 +1,2 @@
 # EnumUtilities
-Some handy functions to simplify working with and convert to and from enums.
+Some handy functions to simplify working with and converting to and from enums.
